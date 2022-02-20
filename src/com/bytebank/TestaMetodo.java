@@ -19,9 +19,11 @@ public class TestaMetodo {
 
         Conta contaDoDiego = new Conta();
         contaDoDiego.saldo = 500.75;
-        contaDoDiego.transferir(250, contaDaElaine);
+       // contaDoDiego.transferir(250, contaDaElaine);
+        boolean conseguiuTransferir = contaDoDiego.transferir(250, contaDaElaine);
         System.out.println("Novo saldo da conta da Elaine " + contaDaElaine.saldo);
         System.out.println("Novo saldo da conta do Diego " + contaDoDiego.saldo);
+        System.out.println("Transferência realizada?: " + conseguiuTransferir);
 
     }
 }
