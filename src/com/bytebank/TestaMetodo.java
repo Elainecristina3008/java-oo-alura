@@ -16,5 +16,12 @@ public class TestaMetodo {
         System.out.println(contaDaElaine.saldo);
         System.out.println(conseguiuRetirar);
 
+
+        Conta contaDoDiego = new Conta();
+        contaDoDiego.saldo = 500.75;
+        contaDoDiego.transferir(250, contaDaElaine);
+        System.out.println("Novo saldo da conta da Elaine " + contaDaElaine.saldo);
+        System.out.println("Novo saldo da conta do Diego " + contaDoDiego.saldo);
+
     }
 }
