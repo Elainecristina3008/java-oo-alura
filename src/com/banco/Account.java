@@ -6,7 +6,7 @@ public class Account {
     private int agencia;
     private int numero;
     private double saldo;
-    Client titular;
+    private Client titular;
 
     public int getAgencia(){
         return agencia;
@@ -26,6 +26,14 @@ public class Account {
     /*public void setSaldo (double saldo){
         this.saldo = saldo;
     }*/
+
+    public Client getTitular() {
+        return titular;
+    }
+
+    public void setTitular(Client titular) {
+        this.titular = titular;
+    }
 
     public void deposita(double valor){
         this.saldo = this.saldo + valor;
