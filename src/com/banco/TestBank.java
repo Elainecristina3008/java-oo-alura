@@ -19,10 +19,12 @@ public class TestBank {
 
         contaElaine.deposita(1500.75);
         System.out.println("Novo saldo da conta é: " + contaElaine.getSaldo());
-        System.out.println("O titular da conta é: " + contaElaine.getTitular().getName());
 
         //essa linha representa composição de Objetos.
-        //System.out.println(contaElaine.titular.name);
+        System.out.println("O titular da conta é: " + contaElaine.getTitular().getName());
+
+
+
 
     }
 }
