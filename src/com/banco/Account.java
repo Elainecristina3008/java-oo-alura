@@ -8,19 +8,34 @@ public class Account {
     private double saldo;
     private Client titular;
 
+    public Account(int agencia, int numero){
+        this.agencia = agencia;
+        this.numero = numero;
+    }
+
     public int getAgencia(){
+
         return agencia;
     }
     public void setAgencia(int agencia){
+        if(agencia <=0){
+            System.out.println("A agência não pode ter numeros iguais ou inferior a zero!");
+            return;
+        }
         this.agencia = agencia;
     }
     public int getNumero(){
+
         return numero;
     }
     public void setNumero(int numero){
+        if (numero <=0){
+            System.out.println("O numero da conta não pode ter numeros iguais ou inferior a zero!");
+        }
         this.numero = numero;
     }
     public double getSaldo() {
+
         return saldo;
     }
     /*public void setSaldo (double saldo){

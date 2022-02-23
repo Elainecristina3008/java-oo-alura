@@ -4,9 +4,9 @@ public class TestBank {
 
     public static void main(String[] args) {
 
-        Account contaElaine = new Account();
-        contaElaine.setAgencia(1425);
-        contaElaine.setNumero(1073338);
+        Account contaElaine = new Account(1425, 73338);
+        //contaElaine.setAgencia(1425);
+        //contaElaine.setNumero(1073338);
 
         Client elaineCruz = new Client();
         elaineCruz.setName("Elaine Cruz");

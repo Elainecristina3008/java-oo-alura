@@ -4,9 +4,9 @@ import com.bytebank.Conta;
 
 public class TesteSacaNegativo {
     public static void main(String[] args) {
-        Account contaTeste = new Account();
-        contaTeste.deposita(100);
-        contaTeste.sacar(200);
+        Account contaTeste = new Account(7367, 24563);
+        //contaTeste.deposita(100);
+        //contaTeste.sacar(200);
 
         boolean conseguiuSacar = contaTeste.sacar(200);
         System.out.println(conseguiuSacar);
