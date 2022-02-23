@@ -11,7 +11,8 @@ public class TestaValores {
         //conta.setAgencia(-5200);
         //conta.setNumero(-107333);
 
-        System.out.println(conta.getAgencia());
+        System.out.println("Conta " + conta.getAgencia() + " criada com sucesso");
+        System.out.println(Account.getTotal());
 
     }
 }
