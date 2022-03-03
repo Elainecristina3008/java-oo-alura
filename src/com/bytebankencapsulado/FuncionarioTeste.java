@@ -1,15 +1,32 @@
 package com.bytebankencapsulado;
 
-public class Funcionario {
+public class FuncionarioTeste {
 
     private String nome;
     private String cpf;
     private double salario;
+    private int tipo = 0; //0-funcionaro comum, 1- Gerente, 2 - Diretor
 
 
     // o atributo get pode ser feito mesmo sem o atributo.
+
+
     public double getBonificacao(){
-        return this.salario * 0.1;
+        if(tipo == 0){ // Funcionário comum.
+            return this.salario * 0.1;
+        }else if(tipo == 1){ // Gerente
+            return this.salario * 0.5;
+        }else{ // Diretor
+            return this.salario + 2000.00;
+        }
+    }
+
+    public int getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(int tipo) {
+        this.tipo = tipo;
     }
 
     public String getNome() {
