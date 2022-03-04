@@ -4,7 +4,7 @@ public class Funcionario {
 
     private String nome;
     private String cpf;
-    protected double salario; //publico para os filhos - privado para os demais.
+    private double salario; //protected - publico para os filhos - privado para os demais.
 
 
     // o atributo get pode ser feito mesmo sem o atributo.
