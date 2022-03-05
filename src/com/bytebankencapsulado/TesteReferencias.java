@@ -2,7 +2,7 @@ package com.bytebankencapsulado;
 
 public class TesteReferencias {
     public static void main(String[] args) {
-        Gerente gerente1 = new Gerente();
+        Funcionario gerente1 = new Gerente();
         //lado esquerdo é a referência e do lado direito o tipo
         gerente1.setNome("Elaine");
         String nome = gerente1.getNome();
@@ -12,7 +12,7 @@ public class TesteReferencias {
         Funcionario funcionario1 = new Funcionario();
         funcionario1.setSalario(1000.0);
 
-        EditorVideo ev = new EditorVideo();
+        Funcionario ev = new EditorVideo();
         ev.setSalario(1500.0);
 
 
