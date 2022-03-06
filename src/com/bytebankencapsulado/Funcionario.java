@@ -1,6 +1,6 @@
 package com.bytebankencapsulado;
 
-public  abstract class Funcionario { // Classes abstratas não podem ser instanciadas, as classes filhas(Classes concretas) que herdam os métodos e atributos que devem ser instanciadas
+public  abstract class Funcionario { // Classes abstratas não podem ser instanciadas, as classes filhas() que herdam os métodos e atributos que devem ser instanciadas
 
     private String nome;
     private String cpf;
@@ -8,9 +8,8 @@ public  abstract class Funcionario { // Classes abstratas não podem ser instanc
 
 
     // o atributo get pode ser feito mesmo sem o atributo.
-    public double getBonificacao(){
-        return this.salario * 0.1;
-    }
+    //Médodo abstrato não tem corpo, a implementação só é possível nas classes filhas.
+    public abstract double getBonificacao();
 
     public String getNome() {
         return nome;
