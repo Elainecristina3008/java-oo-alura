@@ -9,8 +9,8 @@ public class TesteReferencias {
         gerente1.setSalario(2000.0);
         System.out.println(nome);
 
-        Funcionario funcionario1 = new Funcionario();
-        funcionario1.setSalario(1000.0);
+       // Funcionario funcionario1 = new Funcionario();
+        // funcionario1.setSalario(1000.0);
 
         Funcionario ev = new EditorVideo();
         ev.setSalario(1500.0);
@@ -20,7 +20,7 @@ public class TesteReferencias {
 
         ControleBonificacao controle = new ControleBonificacao();
         controle.registra(gerente1);
-        controle.registra(funcionario1);
+        //controle.registra(funcionario1);
         controle.registra(ev);
 
         System.out.println(controle.getSoma());

@@ -1,6 +1,6 @@
 package com.bytebankencapsulado;
 
-public class Funcionario {
+public  abstract class Funcionario { // Classes abstratas não podem ser instanciadas, as classes filhas(Classes concretas) que herdam os métodos e atributos que devem ser instanciadas
 
     private String nome;
     private String cpf;
