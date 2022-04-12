@@ -4,7 +4,7 @@ public class Administrador extends Funcionario implements Autenticavel {
 
     private AutenticacaoUtil util;
 
-    private Administrador(){
+    public Administrador(){
         this.util = new AutenticacaoUtil();
     }
 
