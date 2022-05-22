@@ -7,7 +7,7 @@ public  abstract class Funcionario { // Classes abstratas não podem ser instanc
     private double salario; //protected - publico para os filhos - privado para os demais.
 
 
-    // o atributo get pode ser feito mesmo sem o atributo.
+    // o método get pode ser feito mesmo sem o atributo.
     //Médodo abstrato não tem corpo, a implementação só é possível nas classes filhas.
     public abstract double getBonificacao();
 
