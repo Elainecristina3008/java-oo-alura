@@ -6,10 +6,10 @@ public class Fluxo {
         System.out.println("Ini do main");
         try {
             metodo1();
-        } catch(ArithmeticException ex){
-           //String msg = ex.getMessage();
-            // System.out.println("ArithmeticException" + msg);
-            ex.printStackTrace();
+        } catch(ArithmeticException | NullPointerException ex){
+           String msg = ex.getMessage();
+           System.out.println("Exception " + msg);
+           //ex.printStackTrace();
         }
         System.out.println("Fim do main");
     }
@@ -24,7 +24,9 @@ public class Fluxo {
         System.out.println("Ini do metodo2");
         for(int i = 1; i <= 5; i++) {
             System.out.println(i);
-            int a = i / 0;
+            //int a = i / 0;
+            Account c = null;
+            c.deposita(200);
         }
         System.out.println("Fim do metodo2");
     }
