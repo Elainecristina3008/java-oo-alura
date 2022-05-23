@@ -45,8 +45,7 @@ public class Account {
     }
 
 
-    void deposita(double valor){
-        this.saldo += valor;
+    void deposita()throws MinhaExcecao{
 
     }
 }
