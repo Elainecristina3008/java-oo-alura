@@ -22,8 +22,8 @@ public class FlowWithError {
     private static void metodo2() {
         System.out.println("Ini do metodo2");
 
-        throw new MinhaExcecao("Não funcionou");
+        metodo2();
 
-        //System.out.println("Fim do metodo2");
+        System.out.println("Fim do metodo2");
     }
 }
